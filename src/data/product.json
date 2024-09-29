@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Digita Inv.",
+        "description": "Description Product",
+        "image": "src/assets/example/product1.png",
+        "status": 1        
+    },
+    {
+        "id": 2,
+        "name": "Event DigitaLink",
+        "description": "Description Product",
+        "image": "src/assets/example/product2.png",
+        "status": 2
+    }
+]
