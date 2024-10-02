@@ -28,6 +28,26 @@ const Home = () => {
         setProducts(productData);
     }, []);
 
+    const [formData, setFormData] = useState({
+        nameInput: "",
+        emailInput: "",
+        phoneNumberInput: "",
+        companyInput: "",
+        descInput: "",
+    });
+
+    const { nameInput, emailInput, phoneNumberInput } = formData;
+
+    const isFormValid = nameInput && emailInput && phoneNumberInput;
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
     return (
         <div>
             <section
@@ -213,10 +233,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section
-                id="product"
-                className="h-full px-8 2xl:px-16"
-            >
+            <section id="product" className="h-full px-8 2xl:px-16">
                 <div className="py-28 lg:py-24">
                     <p className="text-center font-bold text-3xl text-[#0093E5]">
                         {t("menu.product")}
@@ -510,6 +527,8 @@ const Home = () => {
                                         id="nameInput"
                                         name="nameInput"
                                         placeholder="Input your name..."
+                                        value={formData.nameInput}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                                 <div className="mb-5 grid grid-cols-1">
@@ -523,6 +542,8 @@ const Home = () => {
                                         id="emailInput"
                                         name="emailInput"
                                         placeholder="Input your email..."
+                                        value={formData.emailInput}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                                 <div className="mb-5 grid grid-cols-1">
@@ -536,6 +557,8 @@ const Home = () => {
                                         id="phoneNumberInput"
                                         name="phoneNumberInput"
                                         placeholder="Input your phone number..."
+                                        value={formData.phoneNumberInput}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                                 <div className="mb-5 grid grid-cols-1">
@@ -548,6 +571,8 @@ const Home = () => {
                                         id="companyInput"
                                         name="companyInput"
                                         placeholder="Input your company..."
+                                        value={formData.companyInput}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                                 <div className="mb-5 grid grid-cols-1">
@@ -560,10 +585,15 @@ const Home = () => {
                                         className="py-2 px-3 rounded-lg"
                                         rows={4}
                                         placeholder="Write specific description..."
+                                        value={formData.descInput}
+                                        onChange={handleInputChange}
                                     ></textarea>
                                 </div>
                                 <div className="flex justify-end">
-                                    <button className="px-4 py-2 bg-[#9A9A9A] rounded-lg text-white">
+                                    <button
+                                        className={`px-4 py-2 rounded-lg text-white ${isFormValid ? 'bg-[#0093E5]' : 'bg-[#9A9A9A]'}`}
+                                        disabled={!isFormValid}
+                                    >
                                         Submit
                                     </button>
                                 </div>
