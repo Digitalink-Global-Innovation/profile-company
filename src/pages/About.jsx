@@ -475,7 +475,7 @@ const About = () => {
                         Tim Manajemen Kunci
                     </h2>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
-                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                        <div className="w-[390px] h-[390px] border-2 border-[#0093E5] rounded-2xl flex flex-col justify-between items-center p-6">
                             {/* Foto */}
                             <img
                                 src={profile}
@@ -492,7 +492,7 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                        <div className="w-[390px] h-[390px] border-2 border-[#0093E5] rounded-2xl flex flex-col justify-between items-center p-6">
                             {/* Foto */}
                             <img
                                 src={profile}
@@ -509,7 +509,7 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                        <div className="w-[390px] h-[390px] border-2 border-[#0093E5] rounded-2xl flex flex-col justify-between items-center p-6">
                             {/* Foto */}
                             <img
                                 src={profile}

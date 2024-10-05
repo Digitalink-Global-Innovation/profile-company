@@ -144,7 +144,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="planning" className="h-screen">
+            <section id="planning" className="h-full">
                 <div className=" px-8 2xl:px-16 py-12">
                     <p className="text-center font-bold text-2xl lg:text-3xl text-[#0093E5]">
                         Rencanakan segera eventmu bersama DigitaLink
