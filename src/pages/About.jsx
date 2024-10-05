@@ -1,4 +1,5 @@
 import backgroundImage from "../assets/img/coverAbout.png";
+import profile from "../assets/img/profile.png";
 const About = () => {
     return (
         <>
@@ -169,7 +170,7 @@ const About = () => {
 
             <section
                 id="nilai-perusahaan"
-                className="h-full flex justify-center items-center bg-white pt-24 lg:pt-16 px-8"
+                className="h-full flex justify-center items-center bg-white pt-24 lg:pt-20 px-8"
             >
                 <div>
                     <h2 className="text-center text-2xl font-bold mb-3 text-[#00507C]">
@@ -467,13 +468,65 @@ const About = () => {
 
             <section
                 id="our-team"
-                className="h-screen flex justify-center items-center bg-white"
+                className="h-full lg:h-screen flex justify-center items-center bg-white py-24 lg:py-20 px-8"
             >
                 <div>
-                    <h2 className="text-center text-4xl font-bold">Our Team</h2>
-                    <p className="text-center mt-4 px-4 max-w-3xl mx-auto">
-                        This is the Our Team section content.
-                    </p>
+                    <h2 className="text-center text-2xl font-bold mb-3 text-[#00507C]">
+                        Tim Manajemen Kunci
+                    </h2>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
+                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                            {/* Foto */}
+                            <img
+                                src={profile}
+                                alt="Foto Nama"
+                                className="rounded-t-xl"
+                            />
+
+                            <div className="h-[86px] w-full bg-[#0093E5] rounded-b-xl p-2">
+                                <p className="text-2xl font-bold text-white">
+                                    Hilal Akbar
+                                </p>
+                                <p className="text-xl font-bold text-white">
+                                    CTO
+                                </p>
+                            </div>
+                        </div>
+                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                            {/* Foto */}
+                            <img
+                                src={profile}
+                                alt="Foto Nama"
+                                className="rounded-t-xl"
+                            />
+
+                            <div className="h-[86px] w-full bg-[#0093E5] rounded-b-xl p-2">
+                                <p className="text-2xl font-bold text-white">
+                                    Devi Apriyani
+                                </p>
+                                <p className="text-xl font-bold text-white">
+                                    CEO
+                                </p>
+                            </div>
+                        </div>
+                        <div className="w-[390px] h-[390px] border-2 border-[#00507C] rounded-2xl flex flex-col justify-between items-center p-6">
+                            {/* Foto */}
+                            <img
+                                src={profile}
+                                alt="Foto Nama"
+                                className="rounded-t-xl"
+                            />
+
+                            <div className="h-[86px] w-full bg-[#0093E5] rounded-b-xl p-2">
+                                <p className="text-2xl font-bold text-white">
+                                    Izzati Millah Hanifah
+                                </p>
+                                <p className="text-xl font-bold text-white">
+                                    COO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
