@@ -12,5 +12,12 @@
         "description": "Description Product",
         "image": "src/assets/example/product2.png",
         "status": 2
+    },
+    {
+        "id": 2,
+        "name": "DigitaLink Development Service",
+        "description": "Description Product",
+        "image": "src/assets/example/product2.png",
+        "status": 1
     }
 ]

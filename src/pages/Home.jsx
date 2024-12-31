@@ -14,12 +14,14 @@ import icon3 from "../assets/img/icon3.png";
 const Home = () => {
     const { t } = useTranslation();
 
-    const settings = {
+    let settings = {
         dots: true,
+        fade: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        waitForAnimate: false
     };
 
     const [products, setProducts] = useState([]);
@@ -233,7 +235,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="product" className="h-full px-8 2xl:px-16">
+            <section id="product" className="h-full px-8 2xl:px-16 mt-40 lg:mt-0">
                 <div className="py-28 lg:py-24">
                     <p className="text-center font-bold text-3xl text-[#0093E5]">
                         {t("menu.product")}
@@ -414,7 +416,7 @@ const Home = () => {
                         <div className="block md:hidden">
                             <div className="slider-container">
                                 <Slider {...settings}>
-                                    <div className="w-full bg-white h-[356px] rounded-xl">
+                                    <div className=" bg-white h-[356px] rounded-xl">
                                         <div className="flex justify-center">
                                             <div className="px-4">
                                                 <div className="flex justify-center">
@@ -443,7 +445,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="w-full bg-white h-[356px] rounded-xl">
+                                    <div className=" bg-white h-[356px] rounded-xl">
                                         <div className="flex justify-center">
                                             <div className="px-4">
                                                 <div className="flex justify-center">
@@ -473,7 +475,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="w-full bg-white h-[356px] rounded-xl">
+                                    <div className=" bg-white h-[356px] rounded-xl">
                                         <div className="flex justify-center">
                                             <div className="px-4">
                                                 <div className="flex justify-center">

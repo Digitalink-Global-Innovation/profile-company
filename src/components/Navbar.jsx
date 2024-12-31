@@ -201,7 +201,7 @@ const Navbar = ({ setLang }) => {
                     </button>
                     <button
                         onClick={() => scrollToSection("product")}
-                        className={`w-[192px] ${getLinkClasses("product")}`}
+                        className={`w-[280px] ${getLinkClasses("product")}`}
                     >
                         {t("menu.product")}
                     </button>

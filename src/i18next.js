@@ -7,7 +7,7 @@ i18next.use(initReactI18next).init({
             translation: {
                 menu: {
                     home: "Beranda",
-                    product: "Produk Kami",
+                    product: "Produk & Layanan Kami",
                     why: "Kenapa DigitaLink",
                     about: "Tentang Kami"
                 }
@@ -17,7 +17,7 @@ i18next.use(initReactI18next).init({
             translation: {
                 menu: {
                     home: "Home",
-                    product: "Our Product",
+                    product: "Our Product & Service",
                     why: "Why DigitaLink",
                     about: "About Us"
                 }
